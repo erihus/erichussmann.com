@@ -1,0 +1,122 @@
+// Bootstrap
+@import 'bootstrap/bootstrap'; //note, some bootstrap components disabled in bootstrap/bootstrap.less
+@import 'components/variables';
+@import 'components/mixins';
+
+html, body {
+    height: 100%;
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px;
+    line-height: 1.2em;
+    font-weight: 300;
+    overflow-x: hidden;
+}
+
+
+section, header, footer, main, article, nav, aside { position: relative; }
+a {
+    outline: none !important;
+    text-decoration: none !important;
+    color: @link-color;
+
+    &:hover,
+    &:focus {
+        color: @link-color-hover;
+    }
+}
+
+.browserupgrade {
+    background-color: #fff;
+    padding: 5px;
+    position: fixed;
+    z-index: 10000;
+    width: 100%;
+}
+
+
+.main {
+    width: 100%;
+    padding: 0;
+    // margin-top: @headerStartHeight;
+}
+
+// .content-block {
+//     padding-top: 58.33% !important;
+//     position: relative;
+
+//     .section-content {
+//         position: absolute;
+//         .center-v;
+//     }
+// }
+
+.hilite {
+    color: @yellow;
+}
+
+.fs-video{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 20;
+}
+
+.sq-btn {
+    .copy;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+    background-color: @yellow;
+    border-radius: 0; 
+    font-weight: 800;
+    padding: 4px 12px;
+    text-align: left;
+
+    &:hover {
+        background-color: @btn-brn;
+    }
+
+    &.wht {
+        color: #fff;
+    } 
+
+    &.blk {
+        color: #000;
+    }
+
+    &.cent {
+        text-align: center;
+    }
+
+    &.invrs {
+        background-color: @btn-brn;
+
+        &:hover {
+            background-color: @yellow;
+        }
+    }
+
+    // .arw {
+    //     display: inline-block;
+    //     width: 20px;
+    //     height: 20px;
+    //     background-image: url(../img/right_arrow.svg);
+    //     background-size: contain;
+    //     background-repeat: no-repeat;
+    //     float: right;
+    //     position: relative;
+    //     right: 5%;
+    // }
+}
+
+
+@import 'components/sections';
+// @import 'components/footer';
+// @import 'components/rules';
