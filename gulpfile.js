@@ -62,6 +62,7 @@ gulp.task('styles', function() {
 
 // Default task
 gulp.task('watch', function() {
+    gulp.watch('assets/src/js/lib/*.js', ['js-libs']);
     gulp.watch('assets/src/js/lib/**/*.js', ['js-libs']);
     gulp.watch('assets/src/js/lib/**/**/*.js', ['js-libs']);
     gulp.watch('assets/src/js/*.js', ['scripts']);

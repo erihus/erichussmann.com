@@ -1,2 +1,10 @@
 @import 'sections/header';
-@import 'sections/top';
+@import 'sections/title';
+
+.content-section {
+	height: 100vh;
+
+	&:nth-child(odd) {
+		background-color: darken(#fff, 5%);
+	}
+}
