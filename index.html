@@ -15,7 +15,7 @@
         <script>
               WebFont.load({
                 google: {
-                  families: ['Open Sans:300,300i,600i,700',  'Abel:400,700']
+                  families: ['Open Sans:700', 'Abel:400,700','Roboto:400,700', 'Ubuntu:400,700']
                 }
               });
             </script>
@@ -86,7 +86,7 @@
             </a>
             <nav id="main-menu">
                 <ul>
-                    <li><a href="">About</a></li>
+                    <li><a href="#about">About</a></li>
                     <li><a href="">Services</a></li>
                     <li><a href="">Work</a></li>
                     <li><a href="">Contact</a></li>
@@ -98,16 +98,114 @@
                 </div>
             </div>
         </header>
-        <section id="title" class="content-section">
-            <div class="section-bg" data-stellar-background-ratio="0.1"></div>
-            <div id="lede">
+        <section id="title" class="title-section">
+            <div class="section-bg"></div>
+            <div class="lede animate-when-visible" data-animation="none">
+                <!-- <div class="lede-border-top animate-when-visible" data-animation="slideInDown"></div> -->
                 <h1>Eric Hussmann</h1>
+                <!-- <div class="lede-border-bottom animate-when-visible" data-animation="slideInUp"></div> -->
                 <h2>Full-Stack Web Developer</h2>
             </div>
         </section>
 
-        <section class="content-section"></section>
-        <section class="content-section"></section>
+        <section id="about" class="content-section">
+            <div class="intro-p">
+                <p>I'm a talented web developer that specializes in architecting purpose-built web applications and crafting engaging digital experiences. With several years of agency experience, I am comfortable in all phases of the digital development process, from advising on project scope and technology choices, to providing design and UX feedback, to development and deployment. I love creating unique solutions and working with individuals that are passionate, motivated and full of ideas.</p>
+            </div>
+            <div id="clients" class="animate-when-visible" data-animation="slideInUp">
+                <h2>Some Clients and Brands I've Worked With</h2>
+                <div class="client-list row">
+                    <div class="col-sm-3">
+                        <a target="_blank" href="https://mfin.com" title="M Financial"><img src="assets/dist/img/logos/mfin_logo.png" /></a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a target="_blank" href="https://www.frankcreative.com/" title="Frank Creative"><img src="assets/dist/img/logos/frank_logo.gif" /></a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a target="_blank" href="https://www.harlointeractive.com/" title="Harlo Interactive"><img src="assets/dist/img/logos/harlo_logo.png" /></a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a target="_blank" href="http://www.hubltd.com/" title="HUB, Ltd."><img src="assets/dist/img/logos/HUB_logo.png" /></a>
+                    </div>
+                </div>
+                <div class="client-list row">                    
+                    <div class="col-sm-3">
+                        <a target="_blank" href="https://www.polartec.com/" title="PolarTec"><img src="assets/dist/img/logos/polartec-logo-clr.png" /></a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a target="_blank" href="https://www.baskinrobbinsathome.com/" title="Baskin Robbins at Home"><img src="assets/dist/img/logos/br_logo.png" /></a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a target="_blank" href="https://www.fetzer.com/" title="Fetzer"><img src="assets/dist/img/logos/fetzer_logo.gif" /></a>
+                    </div>
+                    <div class="col-sm-3">
+                        <a target="_blank" href="http://www.latortillafactory.com/" title="La Tortilla Factory"><img src="assets/dist/img/logos/la_tortilla_logo.png" /></a>
+                    </div>
+                </div>
+            </div>
+            <div id="testimonials" class="animate-when-visible" data-animation="slideInUp">
+                <h2>Nice Things People Have to Say</h2>
+                <ul class="testimonial-slider">
+                    <li>
+                        <blockquote>
+                            I worked with Eric at Harlo Interactive for almost 2 years. In that time, I've been repeatedly impressed by his dedication and willingness to expand his skill set into new regions. Never underestimate this man, he has pulled out some miraculous code for me that should not have been possible, but Eric always finds a way to make it happen! Eric understands and respects the user experience, visual design, and technical feasibility of each project. He's been creative, hard working and reliable. Eric likes to do things the right way. He’s smart. He gets things done, ALWAYS. He’s an ace.
+                            <footer>
+                                <cite>
+                                    Karen Waskin, Sr. Product Manager, Nike
+                                </cite>
+                            </footer>
+                        </blockquote>
+                    </li>
+                    <li>
+                        <blockquote>
+                            Eric is a consistent and crazy good developer. I was always pleasantly surprised when I would check in to see if he need any design assets only to find out he already built the page and added improved interactivity on top of that. Eric stays on top of industry trends and offers up high level thinking to improve our processes. Recommended!
+                            <footer>
+                                <cite>
+                                    Kerry Nehil, Designer at June
+                                </cite>
+                            </footer>
+                        </blockquote>
+                    </li>
+                    <!-- <li></li> -->
+                </ul>
+            </div>
+        </section>
+        <section id="services" class="title-section">
+            <div class="lede animate-when-visible" data-animation="none">                
+                <h1>Services</h1>
+            </div>
+        </section>
+        <section class="content-section">
+            <div class="intro-p">
+                <p>I can provide a wide range of development services on many different platforms and languages. No project is too big or too small.</p>
+            </div>
+        
+            <div id="service-list" class="row">
+                <div class="col-sm-6">
+                    <ul>
+                        <li>Laravel/PHP App Development</li>
+                        <li>Wordpress Theme &amp; Plugin Development</li>
+                        <li>Wordpress Migrations</li>
+                        <li>Cloud-Based Linux Hosting</li>
+                        <li>Node.js Development</li>
+                    </ul>
+                </div>
+                <div class="col-sm-6">
+                    <ul>
+                        <li>Mobile App Development</li>
+                        <li>Technology Consultation</li>
+                        <li>SaaS Integrations</li>
+                        <li>API Integrations</li>
+                        <li>Leaf/Metrc API Development</li>
+                    </ul>
+                </div>
+            </div>
+            <div id="languages">
+                <h2>Langauges I Love</h2>
+
+                
+            </div>
+        </section>
         <section class="content-section"></section>
         <section class="content-section"></section>
         <section class="content-section"></section>

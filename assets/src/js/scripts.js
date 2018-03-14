@@ -4,6 +4,12 @@ $(document).ready(function(){
 		  responsive: true,
 	});
 
+	$('.testimonial-slider').slick({
+		arrows: false,
+		dots: true,
+		autoplay: true
+	});
+
 	$('.hamburger').click(function(){
 		var isMobile = $('#tab-down-mq').is(':visible');
 
@@ -31,4 +37,18 @@ $(window).scroll(function() {
     	$("header").removeClass("scrolled");
     	$('.hamburger').addClass('invisible');
     }
+
+
+    $('.animate-when-visible').each(function(){
+    	var top = $(this).offset().top;
+    	var wh = $(window).height();
+    	if(scroll >= top - wh/2) {
+    		animateWhenVisible($(this));
+    	}
+    });
 });
+
+function animateWhenVisible(el) {
+	var animation = el.data('animation');
+	el.addClass('animated '+animation);
+}
