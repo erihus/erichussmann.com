@@ -1,13 +1,25 @@
 
 .content-section {
-	min-height: 100vh;
+
+	@media @tablet {
+ 		min-height: 100vh;
+ 	}
 
 	// &:nth-child(odd) {
 	// 	background-color: darken(#fff, 5%);
 	// }
 }
 
+.callout-section {
+	background-color: @green;
+	padding: 50px 100px;
+
+	h2 {
+		color: #fff;
+	}
+}
 
 @import 'sections/title';
 @import 'sections/about';
 @import 'sections/services';
+@import 'sections/resume';

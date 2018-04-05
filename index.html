@@ -84,12 +84,22 @@
                 </div>
                 <span id="logo-text">Eric Hussmann</span>   
             </a>
-            <nav id="main-menu">
+            <nav id="main-menu" class="hidden-xs">
                 <ul>
                     <li><a href="#about">About</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Work</a></li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li> -->
+                     <li><a href="#resume">Resum&eacute;</a></li>
+                </ul>
+            </nav>
+            <nav id="mobile-menu" class="visible-xs-block">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <!-- <li><a href="">Work</a></li>
+                    <li><a href="">Contact</a></li> -->
+                     <li><a href="#resume">Resum&eacute;</a></li>
                 </ul>
             </nav>
             <div class="hamburger hamburger--collapse js-hamburger invisible">
@@ -166,7 +176,14 @@
                             </footer>
                         </blockquote>
                     </li>
-                    <!-- <li></li> -->
+                    <li><blockquote>
+                            If there were two words that best describe Mr. Hussman, they'd be Fast and Easy. He's the kind of dev that intuitively fills your mental gaps with seemingly common sense solutions that are anything but common. His code is an operating room of cleanliness and his bedside manner puts the most neurotic at ease. He does this all while comfortably exploring new web experiences, keeping his tools sharp, and contributing critical thinking that challenges your assumptions. He's wildly talented. He's honest. He's my go-to for client projects.
+                            <footer>
+                                <cite>
+                                    Michael Manny, Creative Director, Harlo SF
+                                </cite>
+                            </footer>
+                        </blockquote></li>
                 </ul>
             </div>
         </section>
@@ -181,37 +198,55 @@
             </div>
         
             <div id="service-list" class="row">
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-xs-12">
                     <ul>
+                        <li>Web Development</li>
                         <li>Laravel/PHP App Development</li>
                         <li>Wordpress Theme &amp; Plugin Development</li>
-                        <li>Wordpress Migrations</li>
                         <li>Cloud-Based Linux Hosting</li>
                         <li>Node.js Development</li>
                     </ul>
                 </div>
-                <div class="col-sm-6">
+                <div class="col-sm-6 col-xs-12">
                     <ul>
                         <li>Mobile App Development</li>
                         <li>Technology Consultation</li>
                         <li>SaaS Integrations</li>
                         <li>API Integrations</li>
-                        <li>Leaf/Metrc API Development</li>
+                        <!-- <li>Leaf/Metrc API Development</li> -->
                     </ul>
                 </div>
             </div>
-            <div id="languages">
-                <h2>Langauges I Love</h2>
+        </section>
+        <section id="resume" class="callout-section">
+            <h2>Download my resume.</h2>
+            <a class="btn btn-primary" href="assets/dist/EricHussmannResume2018.pdf" target="_blank">Download</a>
+        </section>
 
-                
+        <!--  <section id="resume" class="title-section">
+            <div class="lede animate-when-visible" data-animation="none">                
+                <h1>Resume</h1>
             </div>
         </section>
+        <section class="content-section">
+            <h2 id="dl-rs">Download my resume <a href="">here.</a></h2>
+        </section> -->
+        <!-- <section class="callout-section">
+            <h2>How Can I help with your next project?</h2>
+            <button>Let's get Started!</button>
+        </section>
+        <section id="work" class="title-section">
+            <div class="lede animate-when-visible" data-animation="none">                
+                <h1>Work</h1>
+            </div>
+        </section> -->
+        <!-- <section class="content-section"></section>
         <section class="content-section"></section>
-        <section class="content-section"></section>
-        <section class="content-section"></section>
+        <section class="content-section"></section> -->
 
 
-        <div id="tab-down-mq" class="hidden-lg"></div>
+        <div id="desk-down-mq" class="hidden-lg"></div>
+        <div id="phone-mq" class="visible-xs-block"></div>
 
 
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>

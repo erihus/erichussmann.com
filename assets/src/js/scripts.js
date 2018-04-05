@@ -1,3 +1,5 @@
+var isMobile = $('#phone-mq').is(':visible');
+
 $(document).ready(function(){
 	
 	$.stellar({
@@ -7,36 +9,89 @@ $(document).ready(function(){
 	$('.testimonial-slider').slick({
 		arrows: false,
 		dots: true,
-		autoplay: true
+		autoplay: true,
+		autoplaySpeed: 6000	
 	});
 
 	$('.hamburger').click(function(){
-		var isMobile = $('#tab-down-mq').is(':visible');
 
 		$(this).toggleClass('is-active');
 
 		if(!isMobile) {
 			$('header').toggleClass('scrolled');
 			$(this).addClass('invisible');
+		} else {
+			$("#mobile-menu").toggleClass('shown');
+			$('html,body').toggleClass('overlay');
+			$(this).removeClass('invisible');
 		}
 	});
 	
+	$('.hamburger').each(function(){
+		if(isMobile) {
+			$(this).removeClass('invisible');
+		}	
+	});
+
+	function anchorAutoScroll($el) {
+		var offset = 50;
+		var top = $el.offset().top;
+
+		if($('header').hasClass('scrolled')) {
+			offset += $('header').data('stuck-height');
+		} 
+
+		var scrollTo = top - offset;
+		$('html, body').removeClass('overlay').animate({scrollTop: scrollTo}, 'slow');
+		
+	}
+
+	$('nav li a').click(function(e){
+		e.preventDefault();		
+		var target = '';
+		var hashURL = '';
+
+		if($(this).is('a')) {
+			hashURL = $(this).attr('href');
+		} else {
+			hashURL = $(this).find('a').attr('href');
+		}
+
+		target = hashURL.split('#')[1]; //in case the href starts with a slash or something	
+		var	$el = $('#'+target);
+
+		if(!$el.length) { // if the anchor is not on the page, follow the link through (usually if its the menu)
+			window.location.replace(hashURL);
+			return;
+		}
+			
+		anchorAutoScroll($el);
+
+		if($(this).closest('nav').is('#mobile-menu')) {
+			$('#mobile-menu').removeClass('shown');
+			$('.hamburger').toggleClass('is-active');
+		}
+	});
+
+
 });
 
 
 $(window).scroll(function() {    
     var scroll = $(window).scrollTop();
-
-    if (scroll >= 70) {
-        $("header").addClass("scrolled");
-        $('.hamburger').removeClass('invisible');
-        if($('.hamburger').hasClass('is-active')) {
-        	$('.hamburger').removeClass('is-active');
-        }
-    } else {
-    	$("header").removeClass("scrolled");
-    	$('.hamburger').addClass('invisible');
-    }
+    
+    if(!isMobile){
+	    if (scroll >= 70) {
+	        $("header").addClass("scrolled");
+	        $('.hamburger').removeClass('invisible');
+	        if($('.hamburger').hasClass('is-active')) {
+	        	$('.hamburger').removeClass('is-active');
+	        }
+	    } else {
+	    	$("header").removeClass("scrolled");
+	    	$('.hamburger').addClass('invisible');
+	    }
+	}
 
 
     $('.animate-when-visible').each(function(){

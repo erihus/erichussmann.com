@@ -6,6 +6,12 @@
 
 html, body {
     height: 100%;
+    max-width: 100vw;
+    // overflow-x: hidden;
+
+    &.overlay {
+        overflow: hidden;
+    }
 }
 
 body {
@@ -103,13 +109,17 @@ a {
 }
 
 .intro-p {
-        padding: 50px 100px;
-        background-color: darken(#fff, 5%);
+    padding: 50px 100px;
+    background-color: darken(#fff, 5%);
 
-        p {
-            font-size: 24px;
-        }
+    p {
+        font-size: 24px;
     }
+
+    @media @phone-down {
+        padding: 50px 20px;
+    }
+}
 
 @import 'libs/hamburger';
 @import 'libs/lede';
