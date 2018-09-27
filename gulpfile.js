@@ -32,7 +32,7 @@ gulp.task('scripts', function() {
 
 // Less to CSS: Run manually with: "gulp styles"
 gulp.task('styles', function() {
-    return gulp.src('assets/src/less/*.less')
+    return gulp.src('assets/src/less/site.less')
         .pipe(plugins.plumber())
         .pipe(plugins.less())
         .on('error', function (err) {
