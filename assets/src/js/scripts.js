@@ -46,11 +46,10 @@ $(document).ready(function(){
 		
 	}
 
-	$('nav li a').click(function(e){
+	$('nav li a:not(.github-link)').click(function(e){
 		e.preventDefault();		
 		var target = '';
 		var hashURL = '';
-
 		if($(this).is('a')) {
 			hashURL = $(this).attr('href');
 		} else {
@@ -76,17 +75,19 @@ $(document).ready(function(){
 	$('.work-item').click(function(){
 		var item = $(this).data('detail');
 		var $overlay =  $('#'+item+'-work');
+		var offset = window.pageYOffset;
 		$overlay.addClass('shown');
 		setTimeout(function(){
 			$overlay.find('.hamburger').addClass('is-active');	
 		}, 100)
-		// $('html,body').addClass('overlay');
+		$('body').addClass('overlay');
+		$overlay.css('top', offset+'px');
 	});
 
 	$('.close-overlay').click(function(){
 		$(this).closest('.work-detail').removeClass('shown');
 		$(this).removeClass('is-active');
-		// $('html,body').removeClass('overlay');
+		$('body').removeClass('overlay');
 	});
 });
 

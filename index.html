@@ -91,6 +91,7 @@
                     <li><a href="#work">Work</a></li>
                     <!-- <li><a href="">Contact</a></li> -->
                      <li><a href="#resume">Resum&eacute;</a></li>
+                     <li><a class="github-link" href="https://github.com/erihus/" target="_blank">Github</a></li>
                 </ul>
             </nav>
             <nav id="mobile-menu" class="visible-sm-block visible-xs-block">
@@ -100,6 +101,7 @@
                     <li><a href="#work">Work</a></li>
                     <!-- <li><a href="">Contact</a></li> -->
                      <li><a href="#resume">Resum&eacute;</a></li>
+                     <li><a class="github-link" href="https://github.com/erihus/" target="_blank">Github</a></li>
                 </ul>
             </nav>
             <div class="hamburger hamburger--collapse js-hamburger invisible">
@@ -174,7 +176,7 @@
                         <li>Laravel/PHP App Development</li>
                         <li>Wordpress Theme &amp; Plugin Development</li>
                         <li>Cloud-Based Linux Hosting</li>
-                        <li>API Integrations</li>
+                        <li>API Development</li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-xs-12">
@@ -199,32 +201,45 @@
                     <div class="work-item grid-item col-md-4 col-sm-6 mfin" data-detail="mfin">
                         <div class="work-title">
                             <h4>M Financial Website Program</h4>
+                            <p class="service-types">Wordpress Theme &amp; Plugin Development<br />Cloud Server Administration</p>
                         </div>
                     </div>
                     <div class="work-item grid-item col-md-4 col-sm-6 parkzilla" data-detail="parkzilla">
                         <div class="work-title">
                             <h4>Parkzilla</h4>
+                            <p class="service-types">API Development | Laravel | Node.js</p>
                         </div>
                     </div>
-                    <div class="work-item grid-item col-md-4 col-sm-6 elemental">
+                    <div class="work-item grid-item col-md-4 col-sm-6 elemental" data-detail="elemental">
                         <div class="work-title">
                             <h4>Elemental CMS</h4>
+                            <p class="service-types">Laravel 5 | Angular | API Development | CMS</p>
                         </div>
                     </div>
-                    
                 </div>
                 <div class="row">
-
-                    <div class="work-item grid-item col-md-4 col-sm-6 gesundheit">
+                    <div class="work-item grid-item col-md-4 col-sm-6 zendesk" data-detail="zendesk">
                         <div class="work-title">
-                            <h4>Gesundheit Foods</h4>
+                            <h4>Zendesk for M</h4>
+                            <p class="service-types">SaaS Integration | Technology Consulting<br />Custom App Development</p>
                         </div>
                     </div>
+
+                    <div class="work-item grid-item col-md-4 col-sm-6 gesundheit" data-detail="gesundheit">
+                        <div class="work-title">
+                            <h4>Gesundheit Foods</h4>
+                            <p class="service-types">Technology Consulting | API Integration</p>
+                        </div>
+                    </div>
+
                     <div class="work-item grid-item col-md-4 col-sm-6 apex">
                         <div class="work-title">
                             <h4>PolarTec Apex Awards</h4>
+                            <p class="service-types">Website Development</p>
                         </div>
                     </div>
+                </div>
+                <div class="row">                    
                     <div class="work-item grid-item col-md-4 col-sm-6 abeulita">
                         <div class="work-title">
                             <h4>Abuelita is Unimpressed</h4>
@@ -235,11 +250,11 @@
                             <h4>Baskin Robbins at Home</h4>
                         </div>                    
                     </div>
-                    <!-- <div class="work-item grid-item col-md-4 col-sm-6 fetzer">
+                    <div class="work-item grid-item col-md-4 col-sm-6 fetzer">
                         <div class="work-title">
                             <h4>Fetzer</h4>
                         </div>
-                    </div> -->
+                    </div>
                 </div>
             </div>
         </section>
@@ -263,41 +278,100 @@
         <section class="content-section"></section> -->
         
         <div id="mfin-work" class="work-detail">
-            <div class="col-md-6 work-desc">
+            <div class="col-md-6 col-md-push-6 work-imgs">
+                <div class="hamburger hamburger--collapse js-hamburger close-overlay">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>            
+                <img class="img-responsive" src="assets/dist/img/work/m_portfolio_2.png" alt="Member Firm Website Program"/>
+            </div>
+
+            <div class="col-md-6 col-md-pull-6 work-desc">
                 <h2>Member Firm Website Program</h2>
                 <p>M Financial has over 100 financial advisor Member Firms, and nearly all of them had very outdated websites in need of modernization. The trick was to find some way to create fully branded and unique websites for each firm at a fraction of the cost they would pay on the open market.</p> 
                 <p>My solution was to create a multi-concept Wordpress theme that provides option controls for nearly every aspect of the design. This enables us to quickly and easily adapt each website to the firm’s unique branding and vision at very low cost and quick turnaround. We manage all the websites in a Wordpress Multisite instance which allows us to keep all of them up-to-date and secure. Custom plugins I have developed allow the firms to leverage a compliance-approved content library, and streamline their requests for support and compliance reviews.</p> 
                 <p>Finally, all of this is cloud-hosted on DigitalOcean, using a network of VPS servers that I stood up and configured, highly available with 99% uptime.</p>
                 <a class="btn btn-primary" href="https://dmportal.msitesprogram.com" target="_blank">More Info</a>
             </div>
-            <div class="col-md-6 work-imgs">
-                <div class="hamburger hamburger--collapse js-hamburger close-overlay">
-                    <div class="hamburger-box">
-                        <div class="hamburger-inner"></div>
-                    </div>
-                </div>            
-                <img class="img-responsive" src="assets/dist/img/work/m_portfolio.png" alt="Member Firm Website Program"/>
-            </div>
         </div>
 
 
         <div id="parkzilla-work" class="work-detail">
-            <div class="col-md-6 work-desc">
-                <h2>Parkzilla</h2>
-                <p>Founder Tim Ashman came to Harlo with unique idea to create an app that would allow users to offer their driveway or parking space for rent. The app would have iOS and Android versions, as well as a web-based profile management tool.</p>
-                <p>In order to accommodate all three platforms, I decided to create a cloud-based API using Parse.com’s SaaS. I used Parse's javascript platform (based on Backbone.js) to build a booking engine and Stripe-integrated marketplace, with API endpoints and corresponding documentation. I worked closely with the mobile app developers to tailor the API to their needs.</p>
-                <p>I then built out the web application using the Laravel PHP framework that allows users to register, connect with Stripe, and set up their parking spaces for rent with custom pricing schedules.</p>
-                <a class="btn btn-primary" href="http://parkzilla.net" target="_blank">Visit Site</a>
-            </div>
-            <div class="col-md-6 work-imgs">
+            <div class="col-md-6 col-md-push-6 work-imgs">
                 <div class="hamburger hamburger--collapse js-hamburger close-overlay">
                     <div class="hamburger-box">
                         <div class="hamburger-inner"></div>
                     </div>
                 </div>            
-                <img class="img-responsive" src="assets/dist/img/work/m_portfolio.png" alt="Member Firm Website Program"/>
+                <img class="img-responsive" src="assets/dist/img/work/parkzilla_frame.png" alt="Parkzilla"/>
+            </div>
+            <div class="col-md-6 col-md-pull-6 work-desc">
+                <h2>Parkzilla</h2>
+                <p>Founder Tim Ashman came to Harlo with unique idea to create an app that would allow users to offer their driveway or parking space for rent. The app would have iOS and Android versions, as well as a web-based profile management tool.</p>
+                <p>In order to accommodate all three platforms, I decided to create a cloud-based API using Parse.com’s SaaS. I used Parse's javascript platform (based on Backbone.js) to build a booking engine and Stripe-integrated marketplace, with API endpoints and corresponding documentation. I worked closely with the mobile app developers to tailor the API to their needs.</p>
+                <p>I then built out the web application using the Laravel PHP framework that allows users to register, connect with Stripe, and set up their parking spaces for rent with custom pricing schedules.</p>
+                <a class="btn btn-primary" href="https://parkzilla.net" target="_blank">Visit Site</a>
+            </div>
+            
+        </div>
+
+        <div id="elemental-work" class="work-detail">
+            <div class="col-md-6 col-md-push-6 work-imgs">
+                <div class="hamburger hamburger--collapse js-hamburger close-overlay">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>            
+                <img class="img-responsive" src="assets/dist/img/work/elemental_frames.png" alt="Member Firm Website Program"/>
+            </div>
+            <div class="col-md-6 col-md-pull-6 work-desc">
+                <h2>Elemental</h2>
+                <p>I created this platform in-house for Harlo. We needed a streamlined way to create custom CMS solutions for clients while also having a ready-made solution to reduce development timelines. Elemental is the best of both worlds. </p>
+                <p>Elemental leverages many of Laravel 5's modern PHP features, including namespaces, interfaces, service provider and facade patterns, and the Eloquent ORM. I also developed a command line interface using Laravel's Artisan Console tool. I designed this architecture to make it easy for my development team to install Elemental as a Composer package and get up and running. All of the heavy lifting is abstracted away and developers have only to create some basic array structures to define their CMS components. Elemental allows developers to generate the site content and CMS interface using a few simple commands in the CLI.</p>
+                <p>To build Elemental's front-end UI, I started by wrapping the Semantic UI library in custom Angular components. The UI is auto-generated based on the defined components and data structures. The back-end Laravel application exposes a REST API to interact with the Angular front-end, as well as any other third-party integrations as needed.</p>
+                <a class="btn btn-primary" href="http://ehussmann.gitbooks.io/elemental-docs" target="_blank">Read the Docs</a>
             </div>
         </div>
+
+        <div id="zendesk-work" class="work-detail">
+            <div class="col-md-6 col-md-push-6 work-imgs">
+                <div class="hamburger hamburger--collapse js-hamburger close-overlay">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>            
+                <img class="img-responsive" src="assets/dist/img/work/zendesk_frames.png" alt="Member Firm Website Program"/>
+            </div>
+
+            <div class="col-md-6 col-md-pull-6 work-desc">
+                <h2>Zendesk for M Financial</h2>
+                <p>M Financial approached Vogey to help them select and implement an enterprise ticketing system that would provide the flexibility to meet the complex business needs of several different internal departments.</p>
+                <p>After an in-depth discovery phase and tools assessment, Zendesk was selected and we began implementation. M now utilizes Zendesk's flexibility and features to the fullest extent, providing tech support to it's Member Firms, internal service desk ticketing, automated communication and marketing compliance workflows, and as an advisor reporting platform that meets FINRA books and records requirements.</p>
+                <p>My role was to help discover each department's unique business needs and then implement best practice workflows using Zendesk's triggers, automations, views and ticket forms. I developed custom Zendesk apps that help the compliance team approve and capture marketing material updates and streamline advisor reporting. Using Zendesk's API, I created an automated app that used a risk-based algorithm to sift through large volumes of financial reporting tickets and flag a percentage for review. I partnered closedly with M's IT team to implement Single-Sign-On, sync user and origanization data, and bulk export Zendesk ticket data into third-party tools.</p>
+                <p>Finally, I helped deliver Zendesk's value to M's upper management by building custom <a href="https://www.gooddata.com/" target="_blank">GoodData</a> reports around their specific KPIs and metrics.</p>
+            </div>
+        </div>
+
+        <div id="gesundheit-work" class="work-detail">
+            <div class="col-md-6 col-md-push-6 work-imgs">
+                <div class="hamburger hamburger--collapse js-hamburger close-overlay">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>            
+                <img class="img-responsive" src="assets/dist/img/work/zendesk_frames.png" alt="Member Firm Website Program"/>
+            </div>
+
+            <div class="col-md-6 col-md-pull-6 work-desc">
+                <h2>Gesundheit Foods ERP</h2>
+                <p>Gesundheit Foods approached Vogey to help them select and implement Enterprise Resource Planning software that would help them create efficiencies and scale quickly.</p>
+                <p>After an in-depth discovery phase and tools assessment, Zendesk was selected and we began implementation. M now utilizes Zendesk's flexibility and features to the fullest extent, providing tech support to it's Member Firms, internal service desk ticketing, automated communication and marketing compliance workflows, and as an advisor reporting platform that meets FINRA books and records requirements.</p>
+                <p>My role was to help discover each department's unique business needs and then implement best practice workflows using Zendesk's triggers, automations, views and ticket forms. I developed custom Zendesk apps that help the compliance team approve and capture marketing material updates and streamline advisor reporting. Using Zendesk's API, I created an automated app that used a risk-based algorithm to sift through large volumes of financial reporting tickets and flag a percentage for review. I partnered closedly with M's IT team to implement Single-Sign-On, sync user and origanization data, and bulk export Zendesk ticket data into third-party tools.</p>
+                <p>Finally, I helped deliver Zendesk's value to M's upper management by building custom <a href="https://www.gooddata.com/" target="_blank">GoodData</a> reports around their specific KPIs and metrics.</p>
+            </div>
+            
+        </div>        
 
         <div id="desk-down-mq" class="hidden-lg"></div>
         <div id="phone-tablet-mq" class="visible-sm-block visible-xs-block"></div>

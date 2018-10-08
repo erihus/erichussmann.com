@@ -59,7 +59,7 @@ header {
 				margin: 15px 25px;
 				position: relative;
 
-				a {
+				a:not(.github-link) {
 					color: #fff;
 					font-family: 'Open Sans', sans-serif;
 					letter-spacing: 2px;
@@ -145,11 +145,28 @@ header {
 					&:hover, &:focus {
 						color: @green;
 					}
+
+					&.github-link {
+						margin: auto; 
+					}
 				}
 			}
 		}
 	}
 
+	.github-link {
+		display: block;
+		text-indent: -9999px;
+		width: 32px;
+		height: 32px;
+		background-image: url(../img/github_sprite.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+
+		&:hover {
+			background-position: -32px;
+		}
+	}
 
 	.hamburger {
 		position: absolute;

@@ -67,6 +67,20 @@
 				transform: translateY(30px);
 			}
 		}
+
+		.service-types {
+			text-align: center;
+			color: @green;
+			font-family: 'Open Sans', sans-serif;
+			// letter-spacing: 2px;
+			font-weight: 700;
+			font-size: 0.7em;	
+			text-transform: uppercase;
+			position: absolute;
+			top: 70%;
+			// left: 50%;
+			width: 100%;
+		}
 	}	
 	
 	&:hover {
@@ -94,13 +108,18 @@
 		background-image: url('../img/logos/mfin_logo.png');
 	}
 
-	// &.fetzer {
-	// 	background-image: url('../img/work/fetzer2.png');
-	// }
+	&.fetzer {
+		background-image: url('../img/logos/fetzer_logo.gif');
+	}
 
 	&.elemental {
 		background-image: url('../img/logos/elemental_logo.png');
 		background-size: 300px;
+	}
+
+	&.zendesk {
+		background-image: url('../img/logos/zendesk_logo.png');
+		// background-size: 300px;
 	}
 
 	&.gesundheit {
@@ -130,7 +149,7 @@
 }
 
 .work-detail {
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -148,7 +167,7 @@
 	}
 
 	.work-desc {
-		padding: 50px;
+		padding: 20px 50px;
 	}
 
 	.work-imgs {
@@ -158,6 +177,7 @@
 	h2 {
 		.headline;
 		color: #6e6e6e;
+		margin-bottom: 30px;
 	}
 
 	p {
@@ -187,5 +207,17 @@
 		&:before, &:after {
 			background-color: @hamburgerColor;
 		}
+	}
+}
+
+#elemental-work {
+	.work-imgs {
+		padding-top: 10%;	
+	}
+}
+
+#zendesk-work {
+	.work-imgs {
+		padding-top: 10%;	
 	}
 }
