@@ -3,13 +3,22 @@
 	padding: 0;
 	height: 100vh;
 
+	@media @tablet-down {
+		max-height: 500px;
+	}
+
 	.section-bg {
 		background-image: url('../img/74151794_xl.jpg');
 		background-size: cover;
 		background-attachment: fixed;
+		background-repeat: no-repeat;
 		width: 100%;
 		height: 100vh;
 		position: absolute;
 		top: 0;
+
+		@media @tablet-down {
+			background-position: top center;
+		}
 	}
 }

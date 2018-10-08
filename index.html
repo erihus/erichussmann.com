@@ -84,7 +84,7 @@
                 </div>
                 <span id="logo-text">Eric Hussmann</span>   
             </a>
-            <nav id="main-menu" class="hidden-xs">
+            <nav id="main-menu" class="hidden-sm hidden-xs">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
@@ -93,12 +93,12 @@
                      <li><a href="#resume">Resum&eacute;</a></li>
                 </ul>
             </nav>
-            <nav id="mobile-menu" class="visible-xs-block">
+            <nav id="mobile-menu" class="visible-sm-block visible-xs-block">
                 <ul>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#work">Work</a></li>
-                    <li><a href="">Contact</a></li>
+                    <!-- <li><a href="">Contact</a></li> -->
                      <li><a href="#resume">Resum&eacute;</a></li>
                 </ul>
             </nav>
@@ -108,7 +108,7 @@
                 </div>
             </div>
         </header>
-        <section id="title" class="title-section">
+        <section id="title" class="title-section row">
             <div class="section-bg"></div>
             <div class="lede animate-when-visible" data-animation="none">
                 <!-- <div class="lede-border-top animate-when-visible" data-animation="slideInDown"></div> -->
@@ -118,41 +118,11 @@
             </div>
         </section>
 
-        <section id="about" class="content-section">
-            <div class="intro-p">
+        <section id="about" class="content-section row">
+            <div class="intro-p row">
                 <p>I'm a talented web developer that specializes in architecting purpose-built web applications and crafting engaging digital experiences. With several years of agency experience, I am comfortable in all phases of the digital development process, from advising on project scope and technology choices, to providing design and UX feedback, to development and deployment. I love creating unique solutions and working with individuals that are passionate, motivated and full of ideas.</p>
             </div>
-            <div id="clients" class="animate-when-visible" data-animation="slideInUp">
-                <h2>Some Clients and Brands I've Worked With</h2>
-                <div class="client-list row">
-                    <div class="col-sm-3">
-                        <a target="_blank" href="https://mfin.com" title="M Financial"><img src="assets/dist/img/logos/mfin_logo.png" /></a>
-                    </div>
-                    <div class="col-sm-3">
-                        <a target="_blank" href="https://www.frankcreative.com/" title="Frank Creative"><img src="assets/dist/img/logos/frank_logo.gif" /></a>
-                    </div>
-                    <div class="col-sm-3">
-                        <a target="_blank" href="https://www.harlointeractive.com/" title="Harlo Interactive"><img src="assets/dist/img/logos/harlo_logo.png" /></a>
-                    </div>
-                    <div class="col-sm-3">
-                        <a target="_blank" href="http://www.hubltd.com/" title="HUB, Ltd."><img src="assets/dist/img/logos/HUB_logo.png" /></a>
-                    </div>
-                </div>
-                <div class="client-list row">                    
-                    <div class="col-sm-3">
-                        <a target="_blank" href="https://www.polartec.com/" title="PolarTec"><img src="assets/dist/img/logos/polartec-logo-clr.png" /></a>
-                    </div>
-                    <div class="col-sm-3">
-                        <a target="_blank" href="https://www.baskinrobbinsathome.com/" title="Baskin Robbins at Home"><img src="assets/dist/img/logos/br_logo.png" /></a>
-                    </div>
-                    <div class="col-sm-3">
-                        <a target="_blank" href="https://www.fetzer.com/" title="Fetzer"><img src="assets/dist/img/logos/fetzer_logo.gif" /></a>
-                    </div>
-                    <div class="col-sm-3">
-                        <a target="_blank" href="http://www.latortillafactory.com/" title="La Tortilla Factory"><img src="assets/dist/img/logos/la_tortilla_logo.png" /></a>
-                    </div>
-                </div>
-            </div>
+            
             <div id="testimonials" class="animate-when-visible" data-animation="slideInUp">
                 <h2>Nice Things People Have to Say</h2>
                 <ul class="testimonial-slider">
@@ -187,13 +157,13 @@
                 </ul>
             </div>
         </section>
-        <section id="services" class="title-section">
+        <section id="services" class="title-section row">
             <div class="lede animate-when-visible" data-animation="none">                
                 <h1>Services</h1>
             </div>
         </section>
-        <section class="content-section">
-            <div class="intro-p">
+        <section class="content-section row">
+            <div class="intro-p row">
                 <p>I can provide a wide range of development services on many different platforms and languages. No project is too big or too small.</p>
             </div>
         
@@ -204,7 +174,7 @@
                         <li>Laravel/PHP App Development</li>
                         <li>Wordpress Theme &amp; Plugin Development</li>
                         <li>Cloud-Based Linux Hosting</li>
-                        <li>Node.js Development</li>
+                        <li>API Integrations</li>
                     </ul>
                 </div>
                 <div class="col-sm-6 col-xs-12">
@@ -212,7 +182,7 @@
                         <li>Mobile App Development</li>
                         <li>Technology Consultation</li>
                         <li>SaaS Integrations</li>
-                        <li>API Integrations</li>
+                        <li>Zendesk Development & Administration</li>
                         <li>Leaf/Metrc API Development</li>
                     </ul>
                 </div>
@@ -226,44 +196,50 @@
         <section class="content-section">
             <div id="work-grid">
                 <div class="row">
-                    <div class="work-item grid-item col-md-4 mfin">
+                    <div class="work-item grid-item col-md-4 col-sm-6 mfin" data-detail="mfin">
                         <div class="work-title">
                             <h4>M Financial Website Program</h4>
-                            <span>-view-</span>
                         </div>
                     </div>
-                    <div class="work-item grid-item col-md-4 parkzilla">
+                    <div class="work-item grid-item col-md-4 col-sm-6 parkzilla" data-detail="parkzilla">
                         <div class="work-title">
                             <h4>Parkzilla</h4>
-                            <span>-view-</span>
                         </div>
                     </div>
-                    <div class="work-item grid-item col-md-4 apex">
+                    <div class="work-item grid-item col-md-4 col-sm-6 elemental">
                         <div class="work-title">
-                            <h4>PolarTec Apex Awards</h4>
-                            <span>-view-</span>
+                            <h4>Elemental CMS</h4>
                         </div>
                     </div>
+                    
                 </div>
                 <div class="row">
-                    <div class="work-item grid-item col-md-4 abeulita">
+
+                    <div class="work-item grid-item col-md-4 col-sm-6 gesundheit">
+                        <div class="work-title">
+                            <h4>Gesundheit Foods</h4>
+                        </div>
+                    </div>
+                    <div class="work-item grid-item col-md-4 col-sm-6 apex">
+                        <div class="work-title">
+                            <h4>PolarTec Apex Awards</h4>
+                        </div>
+                    </div>
+                    <div class="work-item grid-item col-md-4 col-sm-6 abeulita">
                         <div class="work-title">
                             <h4>Abuelita is Unimpressed</h4>
-                            <span>-view-</span>
                         </div>
                     </div>
-                    <div class="work-item grid-item col-md-4 baskin">
+                    <div class="work-item grid-item col-md-4 col-sm-6 baskin">
                          <div class="work-title">
                             <h4>Baskin Robbins at Home</h4>
-                            <span>-view-</span>
                         </div>                    
                     </div>
-                    <div class="work-item grid-item col-md-4 fetzer">
+                    <!-- <div class="work-item grid-item col-md-4 col-sm-6 fetzer">
                         <div class="work-title">
                             <h4>Fetzer</h4>
-                            <span>-view-</span>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -285,17 +261,48 @@
         <!-- <section class="content-section"></section>
         <section class="content-section"></section>
         <section class="content-section"></section> -->
+        
+        <div id="mfin-work" class="work-detail">
+            <div class="col-md-6 work-desc">
+                <h2>Member Firm Website Program</h2>
+                <p>M Financial has over 100 financial advisor Member Firms, and nearly all of them had very outdated websites in need of modernization. The trick was to find some way to create fully branded and unique websites for each firm at a fraction of the cost they would pay on the open market.</p> 
+                <p>My solution was to create a multi-concept Wordpress theme that provides option controls for nearly every aspect of the design. This enables us to quickly and easily adapt each website to the firm’s unique branding and vision at very low cost and quick turnaround. We manage all the websites in a Wordpress Multisite instance which allows us to keep all of them up-to-date and secure. Custom plugins I have developed allow the firms to leverage a compliance-approved content library, and streamline their requests for support and compliance reviews.</p> 
+                <p>Finally, all of this is cloud-hosted on DigitalOcean, using a network of VPS servers that I stood up and configured, highly available with 99% uptime.</p>
+                <a class="btn btn-primary" href="https://dmportal.msitesprogram.com" target="_blank">More Info</a>
+            </div>
+            <div class="col-md-6 work-imgs">
+                <div class="hamburger hamburger--collapse js-hamburger close-overlay">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>            
+                <img class="img-responsive" src="assets/dist/img/work/m_portfolio.png" alt="Member Firm Website Program"/>
+            </div>
+        </div>
 
+
+        <div id="parkzilla-work" class="work-detail">
+            <div class="col-md-6 work-desc">
+                <h2>Parkzilla</h2>
+                <p>Founder Tim Ashman came to Harlo with unique idea to create an app that would allow users to offer their driveway or parking space for rent. The app would have iOS and Android versions, as well as a web-based profile management tool.</p>
+                <p>In order to accommodate all three platforms, I decided to create a cloud-based API using Parse.com’s SaaS. I used Parse's javascript platform (based on Backbone.js) to build a booking engine and Stripe-integrated marketplace, with API endpoints and corresponding documentation. I worked closely with the mobile app developers to tailor the API to their needs.</p>
+                <p>I then built out the web application using the Laravel PHP framework that allows users to register, connect with Stripe, and set up their parking spaces for rent with custom pricing schedules.</p>
+                <a class="btn btn-primary" href="http://parkzilla.net" target="_blank">Visit Site</a>
+            </div>
+            <div class="col-md-6 work-imgs">
+                <div class="hamburger hamburger--collapse js-hamburger close-overlay">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>            
+                <img class="img-responsive" src="assets/dist/img/work/m_portfolio.png" alt="Member Firm Website Program"/>
+            </div>
+        </div>
 
         <div id="desk-down-mq" class="hidden-lg"></div>
-        <div id="phone-mq" class="visible-xs-block"></div>
-
-
+        <div id="phone-tablet-mq" class="visible-sm-block visible-xs-block"></div>
+    
         <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-        <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
-        <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
-        <!-- <script src="https://code.jquery.com/jquery-migrate-3.0.1.min.js"></script> -->
         <script src="assets/dist/js/libs.min.js"></script>
         <script src="assets/dist/js/scripts.min.js"></script>
     </body>

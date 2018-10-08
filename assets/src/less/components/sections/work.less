@@ -10,10 +10,13 @@
 	height:  350px;
 	padding: 0;
 	position: relative;
-	background-size: cover;
+	// background-size: contain;
 	background-repeat: no-repeat;
+	background-position: center center;
 	cursor: pointer;
 	transition: all 0.3s;
+	border-right: 1px solid #e8e8e8;
+	border-bottom: 1px solid #e8e8e8;
 
 	.work-title {
 		width: 100%;
@@ -23,52 +26,166 @@
 		opacity: 0;
 		transition: all 0.5s;
 
-		h4, span {
-			display: block;
-			position: relative;
+		h4 {
+			display: inline;
+			position: absolute;
+			white-space: nowrap;
 			color: #fff;
 			text-align: center;
 			top: 50%;
-			transform: translateY(-50%) scale(0.8);
+			left: 50%;
+			transform: translate(-50%, -50%);
 			transition: all 0.3s;
+			color: #fff;
+			font-family: 'Open Sans', sans-serif;
+			letter-spacing: 2px;
+			font-weight: 700;
+			font-size: 1em;	
+			text-transform: uppercase;
+			
+			
+			&:before, &:after {
+				position: absolute;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background: @green; //#fff;
+				content: '';
+				opacity: 0;
+				transition: all .3s;
+				// backface-visibility: hidden;
 
+			}
+
+			&:before {
+				top: 0;
+				transform: translateY(-30px);
+			}
+
+			&:after {
+				bottom: 0;
+				transform: translateY(30px);
+			}
 		}
 	}	
 	
 	&:hover {
-		// background-size: 150%;
-
 		.work-title {
 			opacity: 1;
-			h4,span {
-				transform: translateY(-50%) scale(1);
-			}
+			
+			h4 {
+				color: @green;
+				&:before, &:after {
+					opacity: 1;
+				}
+
+				&:before {
+					transform: translateY(-20px);
+				}
+
+				&:after {
+					transform: translateY(20px);
+				}
+			}	
 		}
 	}
 
 	&.mfin {
-		background-image: url('../img/work/msites2.png');
-		background-position: center;
+		background-image: url('../img/logos/mfin_logo.png');
 	}
 
-	&.fetzer {
-		background-image: url('../img/work/fetzer2.png');
-		background-position: center;
+	// &.fetzer {
+	// 	background-image: url('../img/work/fetzer2.png');
+	// }
+
+	&.elemental {
+		background-image: url('../img/logos/elemental_logo.png');
+		background-size: 300px;
 	}
+
+	&.gesundheit {
+		background-image: url('../img/logos/gesundheit-logox2-2.png');
+		background-size: 300px;
+	}		
 
 	&.apex {
-		background-image: url('../img/work/apex-2.jpg');
+		// background-image: url('../img/work/apex-2.jpg');
+		background-image: url('../img/logos/polartec-logo-clr.png');
+
 	}
 
 	&.baskin {
-		background-image: url('../img/work/baskin.png');
+		// background-image: url('../img/work/baskin.png');
+		background-image: url('../img/logos/br_logo.png');
 	}
 
 	&.abeulita {
-		background-image: url('../img/work/abuelita.png');
+		// background-image: url('../img/work/abuelita.png');
+		background-image: url('../img/logos/la_tortilla_logo.png');
 	}
 
 	&.parkzilla {
-		background-image: url('../img/work/parkzilla.png');
+		background-image: url('../img/logos/parkzilla_logo.png');
+	}
+}
+
+.work-detail {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: scroll;
+	background-color: #fff;
+	opacity: 0;
+	transition: opacity 0.3s;
+	display: none;
+	z-index: 100;
+
+	&.shown {
+		display: block;
+		opacity: 1;
+	}
+
+	.work-desc {
+		padding: 50px;
+	}
+
+	.work-imgs {
+		padding-top:50px;
+	}
+
+	h2 {
+		.headline;
+		color: #6e6e6e;
+	}
+
+	p {
+		font-size: 14px;
+		line-height: 1.8em;
+		margin-bottom: 30px;
+	}
+	
+	.close-overlay {
+		position: absolute;
+		right: 30px;
+		top: 10px;
+	}
+
+	.btn {
+		background-color: transparent;
+		border-radius:0;
+		color: @green;
+		border: 2px solid @green;
+		text-transform: uppercase;
+		padding: 10px;
+	}
+
+	@hamburgerColor: #000;
+	.hamburger-inner {
+		background-color: @hamburgerColor;
+		&:before, &:after {
+			background-color: @hamburgerColor;
+		}
 	}
 }
