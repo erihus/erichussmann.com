@@ -147,23 +147,37 @@ header {
 
 					&.github-link {
 						margin: auto; 
+						display: block;
+						text-indent: -9999px;
+						width: 32px;
+						height: 32px;
+						background-image: url(../img/github_sprite.png);
+						background-size: cover;
+						background-repeat: no-repeat;
+						transition: none;
+
+						&:hover {
+							background-position: -32px;
+						}
 					}
-				}
+
+					&.linkedin-link {
+						margin: auto; 
+						display: block;
+						text-indent: -9999px;
+						width: 32px;
+						height: 32px;
+						background-image: url(../img/linkedin_sprite.png);
+						background-size: cover;
+						background-repeat: no-repeat;
+						transition: none;
+
+						&:hover {
+							background-position: -32px;
+						}
+					}
+				}	
 			}
-		}
-	}
-
-	.github-link {
-		display: block;
-		text-indent: -9999px;
-		width: 32px;
-		height: 32px;
-		background-image: url(../img/github_sprite.png);
-		background-size: cover;
-		background-repeat: no-repeat;
-
-		&:hover {
-			background-position: -32px;
 		}
 	}
 

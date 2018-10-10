@@ -46,7 +46,7 @@ $(document).ready(function(){
 		
 	}
 
-	$('nav li a:not(.github-link)').click(function(e){
+	$('nav li a:not(.external)').click(function(e){
 		e.preventDefault();		
 		var target = '';
 		var hashURL = '';

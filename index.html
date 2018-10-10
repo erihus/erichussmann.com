@@ -99,8 +99,6 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#resume">Resum&eacute;</a></li>
-                    <li><a class="github-link" href="https://github.com/erihus/" target="_blank">Github</a></li>
                 </ul>
             </nav>
             <nav id="mobile-menu" class="visible-sm-block visible-xs-block">
@@ -109,8 +107,8 @@
                     <li><a href="#services">Services</a></li>
                     <li><a href="#work">Work</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="#resume">Resum&eacute;</a></li>
-                    <li><a class="github-link" href="https://github.com/erihus/" target="_blank">Github</a></li>
+                    <li><a class="external github-link" href="https://github.com/erihus/" target="_blank">Github</a></li>
+                    <li><a class="external linkedin-link" href="https://www.linkedin.com/in/erichussmann" target="_blank">LinkedIn</a></li>
                 </ul>
             </nav>
             <div class="hamburger hamburger--collapse js-hamburger invisible">
@@ -205,10 +203,10 @@
         <section class="content-section">
             <div id="work-grid">
                 <div class="row">
-                    <div class="work-item grid-item col-md-4 col-sm-6 mfin" data-detail="mfin">
+                    <div class="work-item grid-item col-md-4 col-sm-6 elemental" data-detail="elemental">
                         <div class="work-title">
-                            <h4>M Financial Website Program</h4>
-                            <p class="service-types">Wordpress Theme &amp; Plugin Development<br />Cloud Server Administration</p>
+                            <h4>Elemental CMS</h4>
+                            <p class="service-types">Laravel 5 | Angular | API Development | CMS</p>
                         </div>
                     </div>
                     <div class="work-item grid-item col-md-4 col-sm-6 parkzilla" data-detail="parkzilla">
@@ -217,10 +215,11 @@
                             <p class="service-types">API Development | Laravel | Node.js</p>
                         </div>
                     </div>
-                    <div class="work-item grid-item col-md-4 col-sm-6 elemental" data-detail="elemental">
+                
+                    <div class="work-item grid-item col-md-4 col-sm-6 mfin" data-detail="mfin">
                         <div class="work-title">
-                            <h4>Elemental CMS</h4>
-                            <p class="service-types">Laravel 5 | Angular | API Development | CMS</p>
+                            <h4>M Financial Website Program</h4>
+                            <p class="service-types">Wordpress Theme &amp; Plugin Development<br />Cloud Server Administration</p>
                         </div>
                     </div>
                 </div>
@@ -259,7 +258,7 @@
                             <p class="service-types">Website Development</p>
                         </div>                    
                     </div>
-                    <div class="work-item grid-item col-md-4 col-sm-6 fetzer" data-detail="Fetzer">
+                    <div class="work-item grid-item col-md-4 col-sm-6 fetzer" data-detail="fetzer">
                         <div class="work-title">
                             <h4>Fetzer</h4>
                             <p class="service-types">Website Development</p>
@@ -304,6 +303,13 @@
             <h2>Download my resume</h2>
             <a class="btn btn-primary" href="assets/dist/EricHussmannResume2018.pdf" target="_blank">Download</a>
         </section>
+
+        <footer class="site-footer">
+            <div class="footer-links">
+                <a class="github-link" href="https://github.com/erihus/" target="_blank">Github</a>
+                <a class="linkedin-link" href="www.linkedin.com/in/erichussmann" target="_blank">LinkedIn</a>
+            </div>
+        </footer>
         <!--end body content-->
 
         <!--modals -->
@@ -357,9 +363,10 @@
             </div>
             <div class="col-md-6 col-md-pull-6 work-desc">
                 <h2>Elemental CMS</h2>
-                <p>I created this platform in-house for <a href="https://www.harlointeractive.com/" target="_blank">Harlo</a>. We needed a streamlined way to create custom CMS solutions for clients while also having a ready-made solution to reduce development timelines. Elemental is the best of both worlds. </p>
-                <p>Elemental leverages many of Laravel 5's modern PHP features, including namespaces, interfaces, service provider and facade patterns, and the Eloquent ORM. I also developed a command line interface using Laravel's Artisan Console tool. I designed this architecture to make it easy for my development team to install Elemental as a Composer package and get up and running. All of the heavy lifting is abstracted away and developers have only to create some basic array structures to define their CMS components. Elemental allows developers to generate the site content and CMS interface using a few simple commands in the CLI.</p>
-                <p>To build Elemental's front-end UI, I started by wrapping the Semantic UI library in custom Angular components. The UI is auto-generated based on the defined components and data structures. The back-end Laravel application exposes a REST API to interact with the Angular front-end, as well as any other third-party integrations as needed.</p>
+                <p>I built this platform in-house for <a href="https://www.harlointeractive.com/" target="_blank">Harlo</a>. We needed a streamlined way to create custom CMS solutions for clients while also having a ready-made solution to shorten development timelines. Elemental is the best of both worlds. </p>
+                <p>Elemental leverages many of Laravel 5's modern PHP features, including namespaces, interfaces, service provider and facade patterns, and the Eloquent ORM. I also developed a command line interface using Laravel's Artisan Console tool. I designed this architecture to make it easy for my development team to install Elemental as a Composer package and get up and running. All of the heavy lifting is abstracted away and developers have only to create some basic array structures to define their CMS components. They can then generate the CMS user interface with a few simple commands in the CLI.</p>
+                <p>Elemental also exposes a REST API to interact with the Angular front-end services, as well as any other third-party integrations as needed. Elemental's front-end UI wraps the Semantic UI library in custom Angular directives.</p>
+                <p>Finally, I wrote clear and concise documentation to help onboard new team members quickly.</p>
                 <a class="btn btn-primary" href="http://ehussmann.gitbooks.io/elemental-docs" target="_blank">Read the Docs</a>
             </div>
         </div>
@@ -378,8 +385,8 @@
                 <h2>Zendesk for M Financial</h2>
                 <p>M Financial approached <a href="https://vogey.com/" target="_blank">Vogey</a> to help them select and implement an enterprise ticketing system that would provide the flexibility to meet the complex business needs of several different internal departments.</p>
                 <p>After an in-depth discovery phase and tools assessment, Zendesk was selected and we began implementation. M now utilizes Zendesk's flexibility and features to the fullest extent, providing tech support to it's Member Firms, internal service desk ticketing, automated communication and marketing compliance workflows, and as an advisor reporting platform that meets FINRA books and records requirements.</p>
-                <p>My role was to help discover each department's unique business needs and then implement best practice workflows using Zendesk's triggers, automations, views and ticket forms. I developed custom Zendesk apps that help the compliance team approve and capture marketing material updates and streamline advisor reporting. Using Zendesk's API, I created an automated app that used a risk-based algorithm to sift through large volumes of financial reporting tickets and flag a percentage for review. I partnered closedly with M's IT team to implement single sign-on, sync user and origanization data, and bulk export Zendesk ticket data into third-party tools.</p>
-                <p>Finally, I helped deliver Zendesk's value to M's upper management by building custom <a href="https://www.gooddata.com/" target="_blank">GoodData</a> reports around their specific KPIs and metrics.</p>
+                <p>My role was to help discover each department's unique business needs and then implement best practice workflows using Zendesk's triggers, automations, views and ticket forms. I developed custom Zendesk apps that help the compliance team approve and capture marketing material updates and streamline advisor reporting. Using Zendesk's API, I created a risk-based algorithm to sift through large volumes of financial reporting tickets and flag a percentage for review. I partnered closedly with M's IT team to implement single sign-on, sync user and organization data, and bulk export Zendesk ticket data into third-party tools.</p>
+                <p>Finally, I helped deliver value on the platform to M's upper management by building custom <a href="https://www.gooddata.com/" target="_blank">GoodData</a> reports around their specific KPIs and metrics.</p>
             </div>
         </div>
 
@@ -398,7 +405,7 @@
                 <p>The largest cannabis-infused food and beverage co-packer on the West Coast, Gesundheit Foods is growing quickly from their Portland headquarters and building out additional facilities in Oakland, LA and Vancouver, B.C. Their rapid growth had left them without a good integrated solution for the administration of their inventory, shipping, R&D and supply chain processes.</p>
                 <p>After an intensive discovery phase to learn about their business workflows and pain points, I researched dozens of ERP platforms, from open source to mid-market and enterprise solutions like SAP and NetSuite.</p>
                 <p>Ultimately I settled on a Sage X3 implementation that includes various canna-business modules developed by <a href="http://nextecgroup.com/" target="_blank">NexTec Group.</a> I worked closely with the NexTec team to put together a proposal that would meet Gesundheit Food's highly specific needs.</p>
-                <p>On the technical side, I helped put together a hosting solution on AWS for the Sage X3 cloud-based solution. I am currently working to integrate Sage X3's API with the state-required cannabis regulation platform <a href="https://www.metrc.com/" target="_blank">Metrc</a>, which will eliminate hours of manual data entry.</p>
+                <p>On the technical side, I helped put together a hosting solution on AWS for the Sage X3 cloud-based platform. I am currently working to integrate Sage X3's API with the state-required cannabis regulation platform <a href="https://www.metrc.com/" target="_blank">Metrc</a>, which will eliminate hours of manual data entry.</p>
             </div>
         </div>
 
@@ -412,7 +419,7 @@
                 <img class="img-responsive" src="assets/dist/img/work/polartec_frames.png" alt="PolarTec Apex Awards"/>
             </div>
             <div class="col-md-6 col-md-pull-6 work-desc">
-                <h2>PolarTec&reg; Apex Awards Website</h2>
+                <h2>PolarTec<sup>&reg;</sup> Apex Awards Website</h2>
                 <p>Sometimes I take a break from architecting applications and integrating APIs to just build a really cool front-end only marketing website.</p>
                 <p>PolarTec&reg; needed a microsite to showcase their yearly Apex Awards for clothing designers that create innovative designs with PolarTec&reg; fabric.</p>
                 <p>Starting with super-futuristic creative assets from <a href="https://www.frankcreative.com/" target="_blank">Frank Creative</a>, I developed this site to be fully responsive and device and browser compatible. Leaning heavily on SVG, HTML5 video and some CSS3 tricks, I was able to bring Frank's unique vision for PolarTec&reg; to life.</p>
@@ -447,12 +454,29 @@
                         <div class="hamburger-inner"></div>
                     </div>
                 </div>            
-                <img class="img-responsive" src="assets/dist/img/work/abuelita_frames.png" alt="Member Firm Website Program"/>
+                <img class="img-responsive" src="assets/dist/img/work/baskin_frames.png" alt="Member Firm Website Program"/>
             </div>
             <div class="col-md-6 col-md-pull-6 work-desc">
-                <h2>Baskin Robbins at Home</h2>
-                <p></p>
-                <a class="btn btn-primary" href="http://abuelita.dgfdev.com/" target="_blank">Visit Site</a>
+                <h2>Baskin Robbins<sup>&reg;</sup> at Home</h2>
+                <p>This website was launched to help Baskin Robbins&reg; bring their iconic ice cream brand to market in grocery stores throughout the US. Featuring an immersive desktop scrolling experience, HTML5 video background, and store locator tool. The site is an integral part of the Baskin Robbins&reg; At Home digital presence, tying in with a multi-channel media campaign. A fun project working with a national brand.</p>
+                <a class="btn btn-primary" href="https://www.baskinrobbinsathome.com/" target="_blank">Visit Site</a>
+            </div>
+        </div>
+
+        <div id="fetzer-work" class="work-detail">
+            <div class="col-md-6 col-md-push-6 work-imgs">
+                <div class="hamburger hamburger--collapse js-hamburger close-overlay">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>            
+                <img class="img-responsive" src="assets/dist/img/work/fetzer_frames.png" alt="Member Firm Website Program"/>
+            </div>
+            <div class="col-md-6 col-md-pull-6 work-desc">
+                <h2>Fetzer</h2>
+                <p>I was hired to help makes some additions and refreshes to Fetzer's corporate website to help them promote their sustainability and environmentally friendly practices.</p>
+                <p>Modernizing and adding responsiveness to the legacy codebase was the most challenging part of this project.</p>
+                <a class="btn btn-primary" href="http://fetzer.dgfdev.com/" target="_blank">Visit Site</a>
             </div>
         </div>        
 
