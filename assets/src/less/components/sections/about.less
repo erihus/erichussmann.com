@@ -40,7 +40,7 @@
 
 			@media @phone-down {
 				width: 75%;
-				margin: 0 auto;
+				margin: 30px auto;
 			}
 		}
 	}
@@ -50,9 +50,17 @@
 		margin: 0 auto;
 		padding: 40px 30px;
 		border: 1px solid #eee;
-
+			
+		@media @phone-down {
+			padding: 10px 30px;
+		}
+	
 		blockquote {
 			border-left: 0;
+
+			@media @phone-down {
+				line-height: 1.3em;
+			}
 			
 			footer {
 				margin-top: 30px;

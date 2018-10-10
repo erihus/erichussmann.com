@@ -20,6 +20,15 @@
               });
             </script>
         <link rel="stylesheet" href="assets/dist/css/site.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-36196144-2"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-36196144-2');
+        </script>
     </head>
     <body class="landing">
         <!--[if lt IE 8]>
@@ -89,9 +98,9 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#work">Work</a></li>
-                    <!-- <li><a href="">Contact</a></li> -->
-                     <li><a href="#resume">Resum&eacute;</a></li>
-                     <li><a class="github-link" href="https://github.com/erihus/" target="_blank">Github</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#resume">Resum&eacute;</a></li>
+                    <li><a class="github-link" href="https://github.com/erihus/" target="_blank">Github</a></li>
                 </ul>
             </nav>
             <nav id="mobile-menu" class="visible-sm-block visible-xs-block">
@@ -99,9 +108,9 @@
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#work">Work</a></li>
-                    <!-- <li><a href="">Contact</a></li> -->
-                     <li><a href="#resume">Resum&eacute;</a></li>
-                     <li><a class="github-link" href="https://github.com/erihus/" target="_blank">Github</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#resume">Resum&eacute;</a></li>
+                    <li><a class="github-link" href="https://github.com/erihus/" target="_blank">Github</a></li>
                 </ul>
             </nav>
             <div class="hamburger hamburger--collapse js-hamburger invisible">
@@ -110,18 +119,16 @@
                 </div>
             </div>
         </header>
-        <section id="title" class="title-section row">
+        <section id="title" class="title-section">
             <div class="section-bg"></div>
             <div class="lede animate-when-visible" data-animation="none">
-                <!-- <div class="lede-border-top animate-when-visible" data-animation="slideInDown"></div> -->
                 <h1>Eric Hussmann</h1>
-                <!-- <div class="lede-border-bottom animate-when-visible" data-animation="slideInUp"></div> -->
                 <h2>Full-Stack Web Developer</h2>
             </div>
         </section>
 
-        <section id="about" class="content-section row">
-            <div class="intro-p row">
+        <section id="about" class="content-section">
+            <div class="intro-p">
                 <p>I'm a talented web developer that specializes in architecting purpose-built web applications and crafting engaging digital experiences. With several years of agency experience, I am comfortable in all phases of the digital development process, from advising on project scope and technology choices, to providing design and UX feedback, to development and deployment. I love creating unique solutions and working with individuals that are passionate, motivated and full of ideas.</p>
             </div>
             
@@ -149,7 +156,7 @@
                         </blockquote>
                     </li>
                     <li><blockquote>
-                            If there were two words that best describe Mr. Hussman, they'd be Fast and Easy. He's the kind of dev that intuitively fills your mental gaps with seemingly common sense solutions that are anything but common. His code is an operating room of cleanliness and his bedside manner puts the most neurotic at ease. He does this all while comfortably exploring new web experiences, keeping his tools sharp, and contributing critical thinking that challenges your assumptions. He's wildly talented. He's honest. He's my go-to for client projects.
+                            If there were two words that best describe Mr. Hussmann, they'd be Fast and Easy. He's the kind of dev that intuitively fills your mental gaps with seemingly common sense solutions that are anything but common. His code is an operating room of cleanliness and his bedside manner puts the most neurotic at ease. He does this all while comfortably exploring new web experiences, keeping his tools sharp, and contributing critical thinking that challenges your assumptions. He's wildly talented. He's honest. He's my go-to for client projects.
                             <footer>
                                 <cite>
                                     Michael Manny, Creative Director, Harlo SF
@@ -159,13 +166,13 @@
                 </ul>
             </div>
         </section>
-        <section id="services" class="title-section row">
+        <section id="services" class="title-section">
             <div class="lede animate-when-visible" data-animation="none">                
                 <h1>Services</h1>
             </div>
         </section>
-        <section class="content-section row">
-            <div class="intro-p row">
+        <section class="content-section">
+            <div class="intro-p">
                 <p>I can provide a wide range of development services on many different platforms and languages. No project is too big or too small.</p>
             </div>
         
@@ -232,7 +239,7 @@
                         </div>
                     </div>
 
-                    <div class="work-item grid-item col-md-4 col-sm-6 apex">
+                    <div class="work-item grid-item col-md-4 col-sm-6 apex" data-detail="polartec">
                         <div class="work-title">
                             <h4>PolarTec Apex Awards</h4>
                             <p class="service-types">Website Development</p>
@@ -240,43 +247,66 @@
                     </div>
                 </div>
                 <div class="row">                    
-                    <div class="work-item grid-item col-md-4 col-sm-6 abeulita">
+                    <div class="work-item grid-item col-md-4 col-sm-6 abeulita" data-detail="abuelita">
                         <div class="work-title">
                             <h4>Abuelita is Unimpressed</h4>
+                            <p class="service-types">Website Development</p>
                         </div>
                     </div>
-                    <div class="work-item grid-item col-md-4 col-sm-6 baskin">
+                    <div class="work-item grid-item col-md-4 col-sm-6 baskin" data-detail="baskin">
                          <div class="work-title">
                             <h4>Baskin Robbins at Home</h4>
+                            <p class="service-types">Website Development</p>
                         </div>                    
                     </div>
-                    <div class="work-item grid-item col-md-4 col-sm-6 fetzer">
+                    <div class="work-item grid-item col-md-4 col-sm-6 fetzer" data-detail="Fetzer">
                         <div class="work-title">
                             <h4>Fetzer</h4>
+                            <p class="service-types">Website Development</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <section id="resume" class="callout-section">
-            <h2>Download my resume.</h2>
-            <a class="btn btn-primary" href="assets/dist/EricHussmannResume2018.pdf" target="_blank">Download</a>
+       
+        <section id="contact" class="title-section">
+            <div class="lede animate-when-visible" data-animation="none">                
+                <h1>Get In Touch</h1>
+            </div>
         </section>
 
-       
-        <!-- <section class="callout-section">
-            <h2>How Can I help with your next project?</h2>
-            <button>Let's get Started!</button>
-        </section>
-        <section id="work" class="title-section">
-            <div class="lede animate-when-visible" data-animation="none">                
-                <h1>Work</h1>
+        <section class="content-section">
+            <div class="form-container">
+                <div id="wufoo-zdld7hp1s7nh54">
+                    Fill out my <a href="https://ehussmann.wufoo.com/forms/zdld7hp1s7nh54">online form</a>.
+                </div>
             </div>
-        </section> -->
-        <!-- <section class="content-section"></section>
-        <section class="content-section"></section>
-        <section class="content-section"></section> -->
+            <script type="text/javascript">var zdld7hp1s7nh54;(function(d, t) {
+            var s = d.createElement(t), options = {
+            'userName':'ehussmann',
+            'formHash':'zdld7hp1s7nh54',
+            'autoResize':true,
+            'height':'559',
+            'async':true,
+            'host':'wufoo.com',
+            'header':'show',
+            'ssl':true};
+            s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+            s.onload = s.onreadystatechange = function() {
+            var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+            try { zdld7hp1s7nh54 = new WufooForm();zdld7hp1s7nh54.initialize(options);zdld7hp1s7nh54.display(); } catch (e) {}};
+            var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+            })(document, 'script');</script>
+
+        </section>
         
+        <section id="resume" class="callout-section">
+            <h2>Download my resume</h2>
+            <a class="btn btn-primary" href="assets/dist/EricHussmannResume2018.pdf" target="_blank">Download</a>
+        </section>
+        <!--end body content-->
+
+        <!--modals -->
         <div id="mfin-work" class="work-detail">
             <div class="col-md-6 col-md-push-6 work-imgs">
                 <div class="hamburger hamburger--collapse js-hamburger close-overlay">
@@ -308,7 +338,7 @@
             </div>
             <div class="col-md-6 col-md-pull-6 work-desc">
                 <h2>Parkzilla</h2>
-                <p>Founder Tim Ashman came to Harlo with unique idea to create an app that would allow users to offer their driveway or parking space for rent. The app would have iOS and Android versions, as well as a web-based profile management tool.</p>
+                <p>Founder Tim Ashman came to <a href="https://www.harlointeractive.com/" target="_blank">Harlo</a> with unique idea to create an app that would allow users to offer their driveway or parking space for rent. The app would have iOS and Android versions, as well as a web-based profile management tool.</p>
                 <p>In order to accommodate all three platforms, I decided to create a cloud-based API using Parse.com’s SaaS. I used Parse's javascript platform (based on Backbone.js) to build a booking engine and Stripe-integrated marketplace, with API endpoints and corresponding documentation. I worked closely with the mobile app developers to tailor the API to their needs.</p>
                 <p>I then built out the web application using the Laravel PHP framework that allows users to register, connect with Stripe, and set up their parking spaces for rent with custom pricing schedules.</p>
                 <a class="btn btn-primary" href="https://parkzilla.net" target="_blank">Visit Site</a>
@@ -323,11 +353,11 @@
                         <div class="hamburger-inner"></div>
                     </div>
                 </div>            
-                <img class="img-responsive" src="assets/dist/img/work/elemental_frames.png" alt="Member Firm Website Program"/>
+                <img class="img-responsive" src="assets/dist/img/work/elemental_frames.png" alt="Elemental CMS"/>
             </div>
             <div class="col-md-6 col-md-pull-6 work-desc">
                 <h2>Elemental CMS</h2>
-                <p>I created this platform in-house for Harlo. We needed a streamlined way to create custom CMS solutions for clients while also having a ready-made solution to reduce development timelines. Elemental is the best of both worlds. </p>
+                <p>I created this platform in-house for <a href="https://www.harlointeractive.com/" target="_blank">Harlo</a>. We needed a streamlined way to create custom CMS solutions for clients while also having a ready-made solution to reduce development timelines. Elemental is the best of both worlds. </p>
                 <p>Elemental leverages many of Laravel 5's modern PHP features, including namespaces, interfaces, service provider and facade patterns, and the Eloquent ORM. I also developed a command line interface using Laravel's Artisan Console tool. I designed this architecture to make it easy for my development team to install Elemental as a Composer package and get up and running. All of the heavy lifting is abstracted away and developers have only to create some basic array structures to define their CMS components. Elemental allows developers to generate the site content and CMS interface using a few simple commands in the CLI.</p>
                 <p>To build Elemental's front-end UI, I started by wrapping the Semantic UI library in custom Angular components. The UI is auto-generated based on the defined components and data structures. The back-end Laravel application exposes a REST API to interact with the Angular front-end, as well as any other third-party integrations as needed.</p>
                 <a class="btn btn-primary" href="http://ehussmann.gitbooks.io/elemental-docs" target="_blank">Read the Docs</a>
@@ -341,12 +371,12 @@
                         <div class="hamburger-inner"></div>
                     </div>
                 </div>            
-                <img class="img-responsive" src="assets/dist/img/work/zendesk_frames.png" alt="Member Firm Website Program"/>
+                <img class="img-responsive" src="assets/dist/img/work/zendesk_frames.png" alt="Zendesk"/>
             </div>
 
             <div class="col-md-6 col-md-pull-6 work-desc">
                 <h2>Zendesk for M Financial</h2>
-                <p>M Financial approached Vogey to help them select and implement an enterprise ticketing system that would provide the flexibility to meet the complex business needs of several different internal departments.</p>
+                <p>M Financial approached <a href="https://vogey.com/" target="_blank">Vogey</a> to help them select and implement an enterprise ticketing system that would provide the flexibility to meet the complex business needs of several different internal departments.</p>
                 <p>After an in-depth discovery phase and tools assessment, Zendesk was selected and we began implementation. M now utilizes Zendesk's flexibility and features to the fullest extent, providing tech support to it's Member Firms, internal service desk ticketing, automated communication and marketing compliance workflows, and as an advisor reporting platform that meets FINRA books and records requirements.</p>
                 <p>My role was to help discover each department's unique business needs and then implement best practice workflows using Zendesk's triggers, automations, views and ticket forms. I developed custom Zendesk apps that help the compliance team approve and capture marketing material updates and streamline advisor reporting. Using Zendesk's API, I created an automated app that used a risk-based algorithm to sift through large volumes of financial reporting tickets and flag a percentage for review. I partnered closedly with M's IT team to implement single sign-on, sync user and origanization data, and bulk export Zendesk ticket data into third-party tools.</p>
                 <p>Finally, I helped deliver Zendesk's value to M's upper management by building custom <a href="https://www.gooddata.com/" target="_blank">GoodData</a> reports around their specific KPIs and metrics.</p>
@@ -360,18 +390,70 @@
                         <div class="hamburger-inner"></div>
                     </div>
                 </div>            
-                <img class="img-responsive" src="assets/dist/img/work/sage_frames.png" alt="Member Firm Website Program"/>
+                <img class="img-responsive" src="assets/dist/img/work/sage_frames.png" alt="SageX3"/>
             </div>
-
             <div class="col-md-6 col-md-pull-6 work-desc">
                 <h2>Gesundheit Foods ERP</h2>
-                <p>Gesundheit Foods approached Vogey to help them select and implement Enterprise Resource Planning software that would help them create efficiencies, reduce costs, and scale quickly.</p>
-                <p>The largest cannabis-infused food and beverage co-packer on the West Coast, Gesundheit Foods is growing quickly and building out additional facilities in Oakland, LA and Vancouver, B.C. Their rapid growth had left them without a good integrated solution for the administration of their inventory, shipping, R&D and supply chain processes.</p>
+                <p>Gesundheit Foods approached <a href="https://vogey.com/" target="_blank">Vogey</a> to help them select and implement Enterprise Resource Planning software that would help them create efficiencies, reduce costs, and scale quickly.</p>
+                <p>The largest cannabis-infused food and beverage co-packer on the West Coast, Gesundheit Foods is growing quickly from their Portland headquarters and building out additional facilities in Oakland, LA and Vancouver, B.C. Their rapid growth had left them without a good integrated solution for the administration of their inventory, shipping, R&D and supply chain processes.</p>
                 <p>After an intensive discovery phase to learn about their business workflows and pain points, I researched dozens of ERP platforms, from open source to mid-market and enterprise solutions like SAP and NetSuite.</p>
-                <p>Ultimately I settled on a Sage X3 implementation that included various canna-business modules developed by <a href="http://nextecgroup.com/" target="_blank">NexTec Group.</a> I worked closely with the NexTec team to put together a proposal that would meet Gesundheit Food's highly specific needs.</p>
+                <p>Ultimately I settled on a Sage X3 implementation that includes various canna-business modules developed by <a href="http://nextecgroup.com/" target="_blank">NexTec Group.</a> I worked closely with the NexTec team to put together a proposal that would meet Gesundheit Food's highly specific needs.</p>
                 <p>On the technical side, I helped put together a hosting solution on AWS for the Sage X3 cloud-based solution. I am currently working to integrate Sage X3's API with the state-required cannabis regulation platform <a href="https://www.metrc.com/" target="_blank">Metrc</a>, which will eliminate hours of manual data entry.</p>
             </div>
-            
+        </div>
+
+        <div id="polartec-work" class="work-detail">
+            <div class="col-md-6 col-md-push-6 work-imgs">
+                <div class="hamburger hamburger--collapse js-hamburger close-overlay">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>            
+                <img class="img-responsive" src="assets/dist/img/work/polartec_frames.png" alt="PolarTec Apex Awards"/>
+            </div>
+            <div class="col-md-6 col-md-pull-6 work-desc">
+                <h2>PolarTec&reg; Apex Awards Website</h2>
+                <p>Sometimes I take a break from architecting applications and integrating APIs to just build a really cool front-end only marketing website.</p>
+                <p>PolarTec&reg; needed a microsite to showcase their yearly Apex Awards for clothing designers that create innovative designs with PolarTec&reg; fabric.</p>
+                <p>Starting with super-futuristic creative assets from <a href="https://www.frankcreative.com/" target="_blank">Frank Creative</a>, I developed this site to be fully responsive and device and browser compatible. Leaning heavily on SVG, HTML5 video and some CSS3 tricks, I was able to bring Frank's unique vision for PolarTec&reg; to life.</p>
+                <a class="btn btn-primary" href="http://apex.dgfdev.com/" target="_blank">Visit Site</a>
+            </div>
+        </div>
+
+        <div id="abuelita-work" class="work-detail">
+            <div class="col-md-6 col-md-push-6 work-imgs">
+                <div class="hamburger hamburger--collapse js-hamburger close-overlay">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>            
+                <img class="img-responsive" src="assets/dist/img/work/abuelita_frames.png" alt="Abuelita is Unimpressed"/>
+            </div>
+            <div class="col-md-6 col-md-pull-6 work-desc">
+                <h3>La Tortilla Factory</h3>
+                <h2>Abuelita Is Unimpressed</h2>
+                <p>This site was created to coordinate with La Tortilla Factory's first-ever digital ad campaign to reach organic-minded shoppers on a national scale.</p>
+                <p><a href="https://www.harlointeractive.com/case-study/la-tortilla-factory-abuelita" target="_blank">Harlo</a> was contracted to concept, produce, and distribute the campaign and they turned to me to develop the website.</p>
+                <p>The site is fully responsive, and helps showcase a half dozen humerous video spots. I also created a custom javascript library to handle the meme generator portion of the site. The user-generated memes drove social network sharing of the campaign by entering participants in a sweepstakes.</p>
+                <a class="btn btn-primary" href="http://abuelita.dgfdev.com/" target="_blank">Visit Site</a>
+            </div>
+        </div>
+
+
+        <div id="baskin-work" class="work-detail">
+            <div class="col-md-6 col-md-push-6 work-imgs">
+                <div class="hamburger hamburger--collapse js-hamburger close-overlay">
+                    <div class="hamburger-box">
+                        <div class="hamburger-inner"></div>
+                    </div>
+                </div>            
+                <img class="img-responsive" src="assets/dist/img/work/abuelita_frames.png" alt="Member Firm Website Program"/>
+            </div>
+            <div class="col-md-6 col-md-pull-6 work-desc">
+                <h2>Baskin Robbins at Home</h2>
+                <p></p>
+                <a class="btn btn-primary" href="http://abuelita.dgfdev.com/" target="_blank">Visit Site</a>
+            </div>
         </div>        
 
         <div id="desk-down-mq" class="hidden-lg"></div>

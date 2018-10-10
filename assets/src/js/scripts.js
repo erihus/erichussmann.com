@@ -70,6 +70,8 @@ $(document).ready(function(){
 			$('#mobile-menu').removeClass('shown');
 			$('header .hamburger').toggleClass('is-active');
 		}
+
+		ga('send', 'event', 'Nav', 'click', target);
 	});
 
 	$('.work-item').click(function(){
@@ -80,14 +82,15 @@ $(document).ready(function(){
 		setTimeout(function(){
 			$overlay.find('.hamburger').addClass('is-active');	
 		}, 100)
-		$('body').addClass('overlay');
+		$('html,body').addClass('overlay');
 		$overlay.css('top', offset+'px');
+		ga('send', 'event', 'Porfolio', 'click', item);
 	});
 
 	$('.close-overlay').click(function(){
 		$(this).closest('.work-detail').removeClass('shown');
 		$(this).removeClass('is-active');
-		$('body').removeClass('overlay');
+		$('html,body').removeClass('overlay');
 	});
 });
 

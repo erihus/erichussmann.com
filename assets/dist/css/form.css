@@ -1,0 +1,38 @@
+#header {
+	display:none;
+}
+
+form li.focused {
+	background-color: transparent;
+}
+
+label.desc, legend.desc {
+	color: #828282;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.6em;
+}
+
+
+input.text, input.search, textarea.textarea {
+	color: #828282;
+	font-family: 'Roboto', Arial, sans-serif;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 1.6em;
+	border: 1px solid #ddd !important;
+	background: transparent !important;
+	padding: 10px;
+}
+
+#saveForm {
+	border-radius: 0;
+	background-color: transparent;
+	border: 2px solid #61b08c;
+	padding: 10px;
+	text-transform: uppercase;
+	font-family: 'Roboto', Arial, sans-serif;
+	color: #61b08c;
+}
+
