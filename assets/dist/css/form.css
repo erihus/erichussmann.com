@@ -2,25 +2,29 @@
 	display:none;
 }
 
-form li.focused {
-	background-color: transparent;
+.wufoo form li {
+	max-width: 95% !important;
 }
 
-label.desc, legend.desc {
-	color: #828282;
-	font-family: 'Roboto', Arial, sans-serif;
-	font-weight: 300;
+.wufoo form li.focused {
+	background-color: transparent !important;
+}
+
+.wufoo label.desc, .wufoo legend.desc {
+	color: #828282 !important;
+	font-family: 'Roboto', Arial, sans-serif !important;
+	font-weight: 300 !important;
 	font-size: 18px;
 	line-height: 1.6em;
 }
 
 
-input.text, input.search, textarea.textarea {
-	color: #828282;
-	font-family: 'Roboto', Arial, sans-serif;
-	font-weight: 300;
-	font-size: 18px;
-	line-height: 1.6em;
+.wufoo input.text, .wufoo input.search, .wufoo textarea.textarea {
+	color: #828282 !important;
+	font-family: 'Roboto', Arial, sans-serif !important;
+	font-weight: 300 !important;
+	font-size: 18px !important;
+	line-height: 1.6em !important;
 	border: 1px solid #ddd !important;
 	background: transparent !important;
 	padding: 10px;
@@ -36,3 +40,6 @@ input.text, input.search, textarea.textarea {
 	color: #61b08c;
 }
 
+.wufoo .buttons > a {
+	display: none !important;
+}
