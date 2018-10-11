@@ -33,7 +33,12 @@ form.wufoo li.focused {
 	line-height: 1.6em !important;
 	border: 1px solid #ddd !important;
 	background: transparent !important;
-	padding: 10px;
+	/*padding: 10px;*/
+}
+
+.wufoo span.req {
+	font-weight: normal !important;
+	font-size: 12px !important;
 }
 
 #saveForm {
@@ -44,6 +49,11 @@ form.wufoo li.focused {
 	text-transform: uppercase;
 	font-family: 'Roboto', Arial, sans-serif;
 	color: #61b08c;
+}
+
+#saveForm:hover {
+	background-color: #61b08c;
+	color: #fff;
 }
 
 .wufoo .buttons a {
