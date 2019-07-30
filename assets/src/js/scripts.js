@@ -9,7 +9,7 @@ $(document).ready(function(){
 	$('.testimonial-slider').slick({
 		arrows: false,
 		dots: true,
-		autoplay: true,
+		autoplay: false,
 		autoplaySpeed: 6000	
 	});
 
